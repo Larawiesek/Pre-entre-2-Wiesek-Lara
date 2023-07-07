@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate - Milky Way</title>
+    <link href="estilos1.css" rel="stylesheet">
+    <link rel="icon" href="img/ojo-negro-02.svg">
+</head>
+<body>
+    <header>
+        <script src="https://cdn.lordicon.com/pzdvqjsp.js" alt="Menú hamburguesa"></script>
+        <a href="mh.html">
+        <lord-icon
+            src="https://cdn.lordicon.com/wgwcqouc.json"
+            trigger="morph"
+            colors="primary:#000000,secondary:#000000"
+            stroke="100"
+            style="width:30px;height:30px">
+          </a>
+        </lord-icon>
+          <a href="index.html" id="img-header-logo"><img id="img-header-logo" src="img/logo-ojo-solo.svg" alt="Logo de Milky Way"></a>
+          <script src="https://cdn.lordicon.com/pzdvqjsp.js" alt="Carrito"></script>
+          <a href="carrito.html">
+          <lord-icon
+            src="https://cdn.lordicon.com/slkvcfos.json"
+            trigger="morph"
+            colors="primary:#000000,secondary:#000000"
+            style="width:35px;height:35px">
+          </a>
+          </lord-icon>
+      </header>
+      <main>
+        <article>
+            <h1 class="h1-izquierda">Regístrate</h1>
+        </article>
+        <div>
+            <form action="perfil.html" method="get" class="form">
+              <input class="inputgeneral" name="nombre" autofocus required type="text" />
+              <label class="centrolabel" for ="nombre">Nombre y apellido</label>
+              <input class="inputgeneral" name="nombreusuario" minlength="7" maxlength="14" required type="text">
+              <label class="centrolabel" for ="nombreusuario">Nombre de usuario</label>
+              <input class="inputgeneral" name="email" required type="email" />
+              <label class="centrolabel" for ="email">Email</label>
+              <input class="inputgeneral" name="contraseña" required type="password" />
+              <label class="centrolabel" for ="contraseña">Contraseña</label>
+              <input class="inputgeneral" name="telefono" required type="tel" />
+              <label class="centrolabel" for ="telefono">Teléfono</label>
+              <input class="inputgeneral" name="fechanac" max="2010-01-01" type="date" />
+              <label class="centrolabel" for ="fechanac">Fecha de nacimiento</label>
+              <input class="inputgeneral" name="localidad" required type="text" list="localidad">
+              <datalist id="localidad">
+                <option value="Almagro"></option>
+                <option value="Belgrano"></option>
+                <option value="Caballito"></option>
+                <option value="Flores"></option>
+                <option value="Palermo"></option>
+              </datalist>
+              <label class="centrolabel" for ="localidad">Localidad</label>
+              <div id="divacepto">
+                <input name="acepto" required type="checkbox" value="acepto" checked id="acepto">
+                <label for="acepto">Acepto los términos y condiciones</label>
+              </div>
+              <input id="form-button" type="submit" value="Enviar Datos">
+            </form>
+          </div>
+
+          <div id="registrateredes">
+            <div id="redes">
+                <img class="img-footer" src="img/facebook-vio.svg" alt="Logo Facebook">
+                <a href="https://www.instagram.com/milkywaycaf/"><img class="img-footer" src="img/insta-vio.svg" alt="Logo Instagram"></a>
+                <img class="img-footer" src="img/twitter-vio.svg" alt="Logo Twitter">
+            </div>
+            <h4>¡Seguinos en nuestras redes!</h4>
+        </div>
+      </main>
+</body>
+</html>
